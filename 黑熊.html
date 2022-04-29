@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #000;
+            margin: 200px auto;
+            position: relative;
+        }
+
+        .wrap::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            left: 10px;
+            background: #000;
+            position: absolute;
+        }
+
+        .wrap::after {
+            content: "";
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            right: 10px;
+            background: #000;
+            position: absolute;
+        }
+
+        .content {
+
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            top: 5px;
+            left: 15px;
+            background: #fff;
+            position: absolute;
+        }
+
+        .content::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+
+            right: -150px;
+            background: #fff;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .content::after {
+            content: "";
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            top: 40px;
+            left: 20px;
+            background: #fff;
+            position: absolute;
+
+        }
+
+        .content1 {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            top: 45px;
+            left: 125px;
+            background: #fff;
+            position: absolute;
+        }
+
+        .content1::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            top: 5px;
+            right: 95px;
+            background: #000;
+            position: absolute;
+        }
+
+        .content1::after {
+            content: "";
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+
+            top: 5px;
+            left: 5px;
+            background: #000;
+            position: absolute;
+        }
+
+        .content2 {
+            width: 80px;
+            height: 60px;
+            border-radius: 50%;
+            top: 80px;
+            left: 60px;
+            background: #fff;
+            position: absolute;
+
+        }
+
+        .content2::before {
+            content: "";
+            width: 20px;
+            height: 10px;
+            border-radius: 50%;
+            top: 10px;
+            left: 30px;
+            background: #000;
+            position: absolute;
+        }
+
+        .content2::after {
+            content: "";
+            width: 45px;
+            height: 17px;
+            border-radius: 50%;
+            top: 35px;
+            left: 17px;
+            background: #000;
+            position: absolute;
+        }
+
+        .content3 {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            top: 80px;
+            left: -5px;
+            background: #f00;
+            position: absolute;
+        }
+
+        .content3::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+
+            top: 80px;
+            left: 80px;
+            background: #fff;
+            position: absolute;
+            transform: skew(45deg);
+        }
+
+        .content4 {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            top: 80px;
+            right: -5px;
+            background: #f00;
+            position: absolute;
+        }
+
+        .content4::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+
+            top: 80px;
+            left: -60px;
+            background: #fff;
+            position: absolute;
+            transform: skew(135deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="content"></div>
+        <div class="content1"></div>
+        <div class="content2"></div>
+        <div class="content3"></div>
+        <div class="content4"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 30px;
+            height: 70px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3) 100%);
+            border: 1px solid black;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            transform: translateY(-50%, -50%);
+            border-radius: 10%;
+        }
+
+        .wrap::before {
+            content: '';
+            width: 50px;
+            height: 45px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3) 100%);
+            border: 1px solid black;
+            border-right: 0px;
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            transform: translateY(-50%);
+
+        }
+
+        .wrap::after {
+            content: 'Made in Taiwan';
+            width: 300px;
+            height: 70px;
+
+            background:
+                /* linear-gradient(180deg,rgba(255,255,255,0.3),rgba(0, 0, 0,0.3), rgba(255, 255, 255, 0.3) 100% ), */
+                linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 50% 60%, rgba(255, 255, 50, 0.5) 60%),
+                linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3) 100%);
+
+
+
+            border: 1px solid black;
+            position: absolute;
+            top: 50%;
+            left: 80px;
+            transform: translateY(-50%);
+
+            font-size: 12px;
+            color: gray;
+            vertical-align: bottom;
+            line-height: 130px;
+
+        }
+
+        .content {
+            width: 300px;
+            height: 70px;
+            background: repeating-linear-gradient(90deg, white 0, black 1px, transparent 0, transparent .5cm);
+            background-position: .5cm 0;
+            background-repeat: no-repeat;
+            background-size: 100% 10px;
+            border: 1px solid black;
+            position: absolute;
+            top: 50%;
+            left: 80px;
+            transform: translateY(-50%);
+            line-height: 11px;
+            letter-spacing: 8px;
+        }
+
+        .content::before {
+            content: "";
+            width: 50px;
+            height: 50px;
+            border-radius: 10%;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3) 100%);
+            border: 1px solid black;
+            position: absolute;
+            border-left: 0px;
+            top: 50%;
+            left: 300px;
+            transform: translateY(-50%);
+
+        }
+
+        .content::after {
+            content: "";
+            width: 50px;
+            height: 1px;
+            background: black;
+            position: absolute;
+            top: 50%;
+            left: 351px;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+
+        <div class="content">
+            <!-- <span>&nbsp;||||||||||||||||||||||||||</span> -->
+        </div>
+    </div>
+</body>
+
+</html>
